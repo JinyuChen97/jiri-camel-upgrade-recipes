@@ -877,4 +877,41 @@ public class CamelUpdate418_3Test implements RewriteTest {
         );
     }
 
+    @Test
+    void testGithubToGithub2Migration() {
+        //language=xml
+        rewriteRun(
+                pomXml(
+                """
+                <project>
+                    <groupId>com.example</groupId>
+                    <artifactId>test</artifactId>
+                    <version>1.0.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.camel</groupId>
+                            <artifactId>camel-github</artifactId>
+                            <version>4.18.1</version>
+                        </dependency>
+                    </dependencies>
+                </project>
+                """,
+                """
+                <project>
+                    <groupId>com.example</groupId>
+                    <artifactId>test</artifactId>
+                    <version>1.0.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.camel</groupId>
+                            <artifactId>camel-github2</artifactId>
+                            <version>4.18.1</version>
+                        </dependency>
+                    </dependencies>
+                </project>
+                """
+                )
+        );
+    }
+
 }
