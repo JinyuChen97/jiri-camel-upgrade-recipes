@@ -35,11 +35,11 @@ The following table lists migration topics and indicates the level of coverage (
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-jms[camel-jms ObjectMessage Disabled by Default] | ❌ None | Security change, manual configuration required
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-sjms-camel-sjms2[camel-sjms/sjms2 ObjectMessage Disabled] | ❌ None | Security change, manual configuration required
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-hazelcast[camel-hazelcast Default Serialization Filter] | ❌ None | Runtime security enhancement
-| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-stomp-removal[camel-stomp Removed] | ⚠️ TODO-full | Needs `RemoveDependency` for `org.apache.camel:camel-stomp`
-| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-aws-xray-removal[camel-aws-xray Removed] | ⚠️ TODO-full | Needs `RemoveDependency` for `org.apache.camel:camel-aws-xray`
-| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-guava-eventbus-removal[camel-guava-eventbus Removed] | ⚠️ TODO-full | Needs `RemoveDependency` for `org.apache.camel:camel-guava-eventbus`
-| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-grape-removal[camel-grape Removed] | ⚠️ TODO-full | Needs `RemoveDependency` for `org.apache.camel:camel-grape`
-| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-elytron-removal[camel-elytron Removed] | ⚠️ TODO-full | Needs `RemoveDependency` for `org.apache.camel:camel-elytron`
+| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-stomp-removal[camel-stomp Removed] | ✅ Full | Automated removal of `org.apache.camel:camel-stomp` dependency
+| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-aws-xray-removal[camel-aws-xray Removed] | ✅ Full | Automated removal of `org.apache.camel:camel-aws-xray` dependency
+| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-guava-eventbus-removal[camel-guava-eventbus Removed] | ✅ Full | Automated removal of `org.apache.camel:camel-guava-eventbus` dependency
+| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-grape-removal[camel-grape Removed] | ✅ Full | Automated removal of `org.apache.camel:camel-grape` dependency
+| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-elytron-removal[camel-elytron Removed] | ✅ Full | Automated removal of `org.apache.camel:camel-elytron` dependency
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-github-removal[camel-github → camel-github2] | ⚠️ TODO-full | Needs dependency change, type changes, and URI changes
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-telemetry[camel-telemetry Processor Span Changes] | ❌ None | Interface signature changed
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-opentelemetry2[camel-opentelemetry2 Scope Management] | ❌ None | Internal implementation change
@@ -74,7 +74,7 @@ The following table lists migration topics and indicates the level of coverage (
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-mail-2[camel-mail Consumer Dispatch Headers] | ⚠️ Partial | Header string literals migrated. DSL accessor methods require manual update.
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-milo-potential-breaking-change[camel-milo Headers] | ⚠️ Partial | Header string literals migrated. DSL accessor methods (`await()` → `miloAwait()`) require manual update.
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-elasticsearch-camel-opensearch-potential-breaking-change[camel-elasticsearch/opensearch Headers] | ⚠️ Partial | Header string literals migrated. DSL accessor methods (`operation()` → `elasticsearchOperation()`) require manual update.
-| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-jooq-dbcp[camel-jooq DBCP Dependency] | ⚠️ TODO-full | Needs `ChangeDependency`: `commons-dbcp:commons-dbcp` → `org.apache.commons:commons-dbcp2`
+| https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-jooq-dbcp[camel-jooq DBCP Dependency] | ❌ None | Dependency was test-only, removed from camel-jooq. Users should add commons-dbcp2 if needed. Not automated as version mapping is complex.
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#deprecation-of-camel-ironmq[camel-ironmq Deprecated] | ⚠️ TODO-full | Needs deprecation warning recipe
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#deprecation-of-camel-digitalocean[camel-digitalocean Deprecated] | ❌ None | Deprecation notice
 | https://camel.apache.org/manual/camel-4x-upgrade-guide-4_21.html#camel-irc-potential-breaking-change[camel-irc Headers (deprecated)] | ⚠️ Partial | Only basic header usage is migrated. Automated for `.setHeader()` and Simple expressions. Dynamic headers and Map operations require manual review. Component is deprecated.
