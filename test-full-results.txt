@@ -1,0 +1,868 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< org.apache.camel.upgrade:camel-upgrade-recipes >-----------
+[INFO] Building Camel Upgrades Recipes 4.21.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-maven-version) @ camel-upgrade-recipes ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-java-version) @ camel-upgrade-recipes ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ camel-upgrade-recipes ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.7
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ camel-upgrade-recipes ---
+[INFO] Copying 26 resources from src/main/resources to target/classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] The encoding used to copy filtered properties files have not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ camel-upgrade-recipes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ camel-upgrade-recipes ---
+[INFO] skip non existing resourceDirectory /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- dependency:3.1.1:copy (default) @ camel-upgrade-recipes ---
+[INFO] Configured Artifact: org.apache.camel:camel-activemq:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-api:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-bean:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-catalog:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-main:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-management-api:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-mock:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-support:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-util:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-milo:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-api:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-base:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-base-engine:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-endpointdsl:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-json-validator:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-kafka:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-main:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-management-api:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-mock:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-saga:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-support:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-tracing:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-spring-redis:4.4.2:jar
+[INFO] Configured Artifact: org.apache.camel:camel-opensearch:4.4.2:jar
+[INFO] Configured Artifact: org.apache.camel:camel-elasticsearch:4.4.2:jar
+[INFO] Configured Artifact: org.apache.camel:camel-elasticsearch:4.5.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain-chat:4.5.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain-embeddings:4.5.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-http-common:4.6.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-undertow:4.6.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-api:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-db2:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-mongodb:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-oracle:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-mysql:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-postgres:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-sqlserver:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-smb:4.9.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-azure-files:4.9.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-platform-http:4.10.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-http:4.12.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-fury:4.12.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:4.12.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain4j-chat:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain4j-embeddings:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-milvus:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-neo4j:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-pinecone:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-qdrant:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-weaviate:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-qdrant:4.17.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-tahu:4.17.0:jar
+[INFO] Configured Artifact: org.eclipse.tahu:tahu-host:1.0.18:jar
+[INFO] Configured Artifact: org.apache.httpcomponents:httpclient:4.5.14:jar
+[INFO] Configured Artifact: org.apache.httpcomponents:httpcore:4.4.16:jar
+[INFO] Configured Artifact: jakarta.servlet:jakarta.servlet-api:6.0.0:jar
+[INFO] Configured Artifact: javax.xml.bind:jaxb-api:2.3.1:jar
+[INFO] Configured Artifact: jakarta.xml.bind:jakarta.xml.bind-api:4.0.2:jar
+[INFO] Configured Artifact: jakarta.inject:jakarta.inject-api:2.0.0:jar
+[INFO] Configured Artifact: jakarta.ws.rs:jakarta.ws.rs-api:3.1.0:jar
+[INFO] Configured Artifact: org.eclipse.milo:stack-core:0.6.8:jar
+[INFO] Configured Artifact: org.eclipse.milo:stack-server:0.6.8:jar
+[INFO] Configured Artifact: org.eclipse.milo:stack-client:0.6.8:jar
+[INFO] Configured Artifact: org.eclipse.milo:sdk-client:0.6.8:jar
+[INFO] org.apache.camel:camel-activemq:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-api:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-bean:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-catalog:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-main:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-management-api:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-mock:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-support:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-util:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-milo:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-api:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-base:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-base-engine:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-endpointdsl:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-json-validator:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-kafka:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-main:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-management-api:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-mock:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-saga:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-support:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-tracing:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-spring-redis:4.4.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-opensearch:4.4.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-elasticsearch:4.4.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-elasticsearch:4.5.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain-chat:4.5.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain-embeddings:4.5.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-http-common:4.6.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-undertow:4.6.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-api:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-db2:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-mongodb:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-oracle:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-mysql:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-postgres:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-sqlserver:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-smb:4.9.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-azure-files:4.9.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-platform-http:4.10.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-http:4.12.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-fury:4.12.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:4.12.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain4j-chat:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain4j-embeddings:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-milvus:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-neo4j:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-pinecone:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-qdrant:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-weaviate:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-qdrant:4.17.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-tahu:4.17.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.tahu:tahu-host:1.0.18:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.httpcomponents:httpclient:4.5.14:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.httpcomponents:httpcore:4.4.16:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.servlet:jakarta.servlet-api:6.0.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] javax.xml.bind:jaxb-api:2.3.1:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.xml.bind:jakarta.xml.bind-api:4.0.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.inject:jakarta.inject-api:2.0.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.ws.rs:jakarta.ws.rs-api:3.1.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:stack-core:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:stack-server:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:stack-client:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:sdk-client:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ camel-upgrade-recipes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.3.0:test (default-test) @ camel-upgrade-recipes ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.camel.upgrade.CamelUpdate420Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate415Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate42Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate43Test
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInJavaMethodTest
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInSimpleExpressionTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate418Test
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeadersTest
+[INFO] Running org.apache.camel.upgrade.NoModerneRecipesTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate414Test
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInXmlDslTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s -- in org.apache.camel.upgrade.NoModerneRecipesTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate45Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate413Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate41Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate419Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate44Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate416From3xTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate49Test
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInYamlDslTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelHttpTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate421Test
+[INFO] Running org.apache.camel.upgrade.LatestCamelVersionTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate417Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate418_3Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate412Test
+[INFO] Running org.apache.camel.upgrade.latest.CamelUpdateLatestVersionTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s -- in org.apache.camel.upgrade.latest.CamelUpdateLatestVersionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.370 s -- in org.apache.camel.upgrade.LatestCamelVersionTest
+[INFO] Running org.apache.camel.upgrade.suites.CamelUpdate418LtsTestSuite
+[INFO] Running org.apache.camel.upgrade.camel40.CameXmlDslRecipeTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelYamlTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate418Test
+[INFO] Running org.apache.camel.upgrade.suites.CamelUpdate410LtsTestSuite
+[INFO] Running org.apache.camel.upgrade.CamelUpdate45Test
+[INFO] Running org.apache.camel.upgrade.suites.CamelUpdateLatestTestSuite
+[INFO] Running org.apache.camel.upgrade.CamelUpdate419Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.145 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInYamlDslTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelAPIsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.075 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInXmlDslTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelJmxTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.096 s -- in org.apache.camel.upgrade.camel40.CameXmlDslRecipeTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelBeanRecipeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.878 s -- in org.apache.camel.upgrade.CamelUpdate414Test
+[INFO] Running org.apache.camel.upgrade.camel40.CamelEIPRecipeTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.910 s -- in org.apache.camel.upgrade.camel40.CamelYamlTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelAPIsPropertiesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s -- in org.apache.camel.upgrade.camel40.CamelAPIsPropertiesTest
+[INFO] Running org.apache.camel.upgrade.camel410lts.CamelUpdate410LtsVersionTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s -- in org.apache.camel.upgrade.camel410lts.CamelUpdate410LtsVersionTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate411Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.26 s -- in org.apache.camel.upgrade.camel421.RenameHeadersTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate47Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.14 s -- in org.apache.camel.upgrade.camel40.CamelJmxTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate410_4Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.26 s -- in org.apache.camel.upgrade.CamelUpdate418Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate46Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.89 s -- in org.apache.camel.upgrade.CamelUpdate416From3xTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate410Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.06 s -- in org.apache.camel.upgrade.camel44.CamelUpdate42Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.84 s -- in org.apache.camel.upgrade.CamelUpdate420Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.818 s -- in org.apache.camel.upgrade.CamelUpdate410_4Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.09 s -- in org.apache.camel.upgrade.camel40.CamelHttpTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.47 s -- in org.apache.camel.upgrade.camel44.CamelUpdate41Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.77 s -- in org.apache.camel.upgrade.CamelUpdate417Test
+[WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 30.79 s -- in org.apache.camel.upgrade.CamelUpdate419Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate414Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.62 s -- in org.apache.camel.upgrade.CamelUpdate418Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate418_3Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.287 s -- in org.apache.camel.upgrade.CamelUpdate414Test
+[INFO] Running org.apache.camel.upgrade.camel40.CamelEIPRecipeTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.61 s -- in org.apache.camel.upgrade.CamelUpdate419Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.24 s -- in org.apache.camel.upgrade.camel40.CamelEIPRecipeTest
+[WARNING] Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 37.59 s -- in org.apache.camel.upgrade.CamelUpdate413Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.54 s -- in org.apache.camel.upgrade.CamelUpdate410Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.35 s -- in org.apache.camel.upgrade.CamelUpdate415Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.77 s -- in org.apache.camel.upgrade.camel40.CamelBeanRecipeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.64 s -- in org.apache.camel.upgrade.camel44.CamelUpdate43Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.75 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInJavaMethodTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.84 s -- in org.apache.camel.upgrade.CamelUpdate49Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.46 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInSimpleExpressionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.08 s -- in org.apache.camel.upgrade.CamelUpdate411Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.99 s -- in org.apache.camel.upgrade.CamelUpdate47Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.13 s -- in org.apache.camel.upgrade.camel40.CamelEIPRecipeTest
+[INFO] Running org.apache.camel.upgrade.NoModerneRecipesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s -- in org.apache.camel.upgrade.NoModerneRecipesTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelJmxTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.62 s -- in org.apache.camel.upgrade.CamelUpdate45Test
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 47.58 s -- in org.apache.camel.upgrade.camel44.CamelUpdate44Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.72 s -- in org.apache.camel.upgrade.CamelUpdate46Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.957 s -- in org.apache.camel.upgrade.camel40.CamelJmxTest
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate41Test
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 47.20 s -- in org.apache.camel.upgrade.CamelUpdate45Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate46Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.75 s -- in org.apache.camel.upgrade.CamelUpdate412Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.798 s -- in org.apache.camel.upgrade.camel44.CamelUpdate41Test
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeadersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 s -- in org.apache.camel.upgrade.camel421.RenameHeadersTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelYamlTest
+[WARNING] Tests run: 8, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.335 s -- in org.apache.camel.upgrade.camel40.CamelYamlTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate418Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.889 s -- in org.apache.camel.upgrade.CamelUpdate418Test
+[INFO] Running org.apache.camel.upgrade.camel40.CamelHttpTest
+[WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.877 s -- in org.apache.camel.upgrade.CamelUpdate46Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate47Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.986 s -- in org.apache.camel.upgrade.camel40.CamelHttpTest
+[INFO] Running org.apache.camel.upgrade.camel40.CameXmlDslRecipeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s -- in org.apache.camel.upgrade.camel40.CameXmlDslRecipeTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate410Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.295 s -- in org.apache.camel.upgrade.CamelUpdate410Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate411Test
+[WARNING] Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.145 s -- in org.apache.camel.upgrade.CamelUpdate47Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate49Test
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.549 s -- in org.apache.camel.upgrade.CamelUpdate411Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate415Test
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.942 s -- in org.apache.camel.upgrade.CamelUpdate49Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate410Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.064 s -- in org.apache.camel.upgrade.CamelUpdate410Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate412Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.164 s -- in org.apache.camel.upgrade.CamelUpdate415Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate47Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 s -- in org.apache.camel.upgrade.CamelUpdate412Test
+[INFO] Running org.apache.camel.upgrade.camel40.CamelAPIsPropertiesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in org.apache.camel.upgrade.camel40.CamelAPIsPropertiesTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelHttpTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.755 s -- in org.apache.camel.upgrade.camel40.CamelHttpTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelAPIsTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.99 s -- in org.apache.camel.upgrade.camel40.CamelAPIsTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.47 s -- in org.apache.camel.upgrade.CamelUpdate418_3Test
+[WARNING] Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.636 s -- in org.apache.camel.upgrade.CamelUpdate47Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate44Test
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.86 s -- in org.apache.camel.upgrade.CamelUpdate421Test
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 2.353 s -- in org.apache.camel.upgrade.camel44.CamelUpdate44Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate420Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 s -- in org.apache.camel.upgrade.CamelUpdate420Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate43Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.962 s -- in org.apache.camel.upgrade.camel44.CamelUpdate43Test
+[INFO] Running org.apache.camel.upgrade.camel40.CamelAPIsPropertiesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s -- in org.apache.camel.upgrade.camel40.CamelAPIsPropertiesTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelAPIsTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.970 s -- in org.apache.camel.upgrade.camel40.CamelAPIsTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelEIPRecipeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 s -- in org.apache.camel.upgrade.camel40.CamelEIPRecipeTest
+[INFO] Running org.apache.camel.upgrade.camel40.CameXmlDslRecipeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.040 s -- in org.apache.camel.upgrade.camel40.CameXmlDslRecipeTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelJmxTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s -- in org.apache.camel.upgrade.camel40.CamelJmxTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelBeanRecipeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.860 s -- in org.apache.camel.upgrade.camel40.CamelBeanRecipeTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelYamlTest
+[WARNING] Tests run: 8, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.035 s -- in org.apache.camel.upgrade.camel40.CamelYamlTest
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate43Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.895 s -- in org.apache.camel.upgrade.camel44.CamelUpdate43Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate41Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.550 s -- in org.apache.camel.upgrade.camel44.CamelUpdate41Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate42Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in org.apache.camel.upgrade.camel44.CamelUpdate42Test
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate44Test
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.46 s -- in org.apache.camel.upgrade.CamelUpdate418_3Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate419Test
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.470 s -- in org.apache.camel.upgrade.camel40.CamelAPIsTest
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInYamlDslTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInYamlDslTest
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInXmlDslTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInXmlDslTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate412Test
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.281 s -- in org.apache.camel.upgrade.CamelUpdate419Test
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 68.74 s -- in org.apache.camel.upgrade.suites.CamelUpdate418LtsTestSuite
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.380 s -- in org.apache.camel.upgrade.CamelUpdate412Test
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInJavaMethodTest
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 1.635 s -- in org.apache.camel.upgrade.camel44.CamelUpdate44Test
+[INFO] Running org.apache.camel.upgrade.camel410lts.CamelUpdate410LtsVersionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.286 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInJavaMethodTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate418_3Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.158 s -- in org.apache.camel.upgrade.camel410lts.CamelUpdate410LtsVersionTest
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 70.03 s -- in org.apache.camel.upgrade.suites.CamelUpdate410LtsTestSuite
+[ERROR] Tests run: 19, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 18.83 s <<< FAILURE! -- in org.apache.camel.upgrade.CamelUpdate418_3Test
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testOpensearchHeadersMigrationJava -- Time elapsed: 1.218 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testOpensearchHeadersMigrationJava(CamelUpdate418_3Test.java:340)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testElasticsearchHeadersMigrationJava -- Time elapsed: 1.225 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testElasticsearchHeadersMigrationJava(CamelUpdate418_3Test.java:295)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testGitHub2HeadersMigrationJava -- Time elapsed: 0.816 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+[The recipe should have made the following change to "test-github/pom.xml"] 
+expected: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github2</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+ but was: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:612)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testGitHub2HeadersMigrationJava(CamelUpdate418_3Test.java:728)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testMailHeadersMigrationJava -- Time elapsed: 0.778 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testMailHeadersMigrationJava(CamelUpdate418_3Test.java:213)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testMiloHeadersMigrationJava -- Time elapsed: 0.796 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testMiloHeadersMigrationJava(CamelUpdate418_3Test.java:256)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testPdfHeadersMigrationJava -- Time elapsed: 0.772 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testPdfHeadersMigrationJava(CamelUpdate418_3Test.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testLuceneHeadersMigrationJava -- Time elapsed: 0.773 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testLuceneHeadersMigrationJava(CamelUpdate418_3Test.java:45)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testArangoDbHeadersMigrationJava -- Time elapsed: 2.310 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testArangoDbHeadersMigrationJava(CamelUpdate418_3Test.java:131)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testJt400HeadersMigrationJava -- Time elapsed: 0.742 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testJt400HeadersMigrationJava(CamelUpdate418_3Test.java:172)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running org.apache.camel.upgrade.CamelUpdate46Test
+[WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.113 s -- in org.apache.camel.upgrade.CamelUpdate46Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate410_4Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s -- in org.apache.camel.upgrade.CamelUpdate410_4Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate49Test
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.412 s -- in org.apache.camel.upgrade.CamelUpdate49Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate413Test
+[WARNING] Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.820 s -- in org.apache.camel.upgrade.CamelUpdate413Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate421Test
+[ERROR] Tests run: 23, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 12.85 s <<< FAILURE! -- in org.apache.camel.upgrade.CamelUpdate421Test
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testOpensearchHeadersMigrationJava -- Time elapsed: 0.350 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testOpensearchHeadersMigrationJava(CamelUpdate418_3Test.java:340)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testOpensearchHeadersMigrationJava(CamelUpdate421Test.java:293)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testElasticsearchHeadersMigrationJava -- Time elapsed: 0.672 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testElasticsearchHeadersMigrationJava(CamelUpdate418_3Test.java:295)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testElasticsearchHeadersMigrationJava(CamelUpdate421Test.java:288)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testGitHub2HeadersMigrationJava -- Time elapsed: 0.300 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+[The recipe should have made the following change to "test-github/pom.xml"] 
+expected: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github2</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+ but was: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:612)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testGitHub2HeadersMigrationJava(CamelUpdate418_3Test.java:728)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testGitHub2HeadersMigrationJava(CamelUpdate421Test.java:175)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testMailHeadersMigrationJava -- Time elapsed: 0.300 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testMailHeadersMigrationJava(CamelUpdate418_3Test.java:213)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testMailHeadersMigrationJava(CamelUpdate421Test.java:278)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testMiloHeadersMigrationJava -- Time elapsed: 0.376 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testMiloHeadersMigrationJava(CamelUpdate418_3Test.java:256)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testMiloHeadersMigrationJava(CamelUpdate421Test.java:283)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testPdfHeadersMigrationJava -- Time elapsed: 0.300 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testPdfHeadersMigrationJava(CamelUpdate418_3Test.java:86)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testPdfHeadersMigrationJava(CamelUpdate421Test.java:263)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testLuceneHeadersMigrationJava -- Time elapsed: 0.299 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testLuceneHeadersMigrationJava(CamelUpdate418_3Test.java:45)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testLuceneHeadersMigrationJava(CamelUpdate421Test.java:258)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testArangoDbHeadersMigrationJava -- Time elapsed: 1.817 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testArangoDbHeadersMigrationJava(CamelUpdate418_3Test.java:131)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testArangoDbHeadersMigrationJava(CamelUpdate421Test.java:268)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testJt400HeadersMigrationJava -- Time elapsed: 0.346 s <<< FAILURE!
+java.lang.AssertionError: Recipe was expected to make a change but made no changes.
+	at org.openrewrite.test.LargeSourceSetCheckingExpectedCycles.afterCycle(LargeSourceSetCheckingExpectedCycles.java:119)
+	at org.openrewrite.RecipeScheduler.runRecipeCycles(RecipeScheduler.java:96)
+	at org.openrewrite.RecipeScheduler.scheduleRun(RecipeScheduler.java:42)
+	at org.openrewrite.Recipe.run(Recipe.java:447)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:415)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:134)
+	at org.openrewrite.test.RewriteTest.rewriteRun(RewriteTest.java:129)
+	at org.apache.camel.upgrade.CamelUpdate418_3Test.testJt400HeadersMigrationJava(CamelUpdate418_3Test.java:172)
+	at org.apache.camel.upgrade.CamelUpdate421Test.testJt400HeadersMigrationJava(CamelUpdate421Test.java:273)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] Running org.apache.camel.upgrade.camel421.RenameHeaderInSimpleExpressionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.355 s -- in org.apache.camel.upgrade.camel421.RenameHeaderInSimpleExpressionTest
+[INFO] Running org.apache.camel.upgrade.camel40.CamelBeanRecipeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.877 s -- in org.apache.camel.upgrade.camel40.CamelBeanRecipeTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate416From3xTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 s -- in org.apache.camel.upgrade.CamelUpdate416From3xTest
+[INFO] Running org.apache.camel.upgrade.LatestCamelVersionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.camel.upgrade.LatestCamelVersionTest
+[INFO] Running org.apache.camel.upgrade.latest.CamelUpdateLatestVersionTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in org.apache.camel.upgrade.latest.CamelUpdateLatestVersionTest
+[INFO] Running org.apache.camel.upgrade.CamelUpdate45Test
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.547 s -- in org.apache.camel.upgrade.CamelUpdate45Test
+[INFO] Running org.apache.camel.upgrade.camel410lts.CamelUpdate410LtsVersionTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in org.apache.camel.upgrade.camel410lts.CamelUpdate410LtsVersionTest
+[INFO] Running org.apache.camel.upgrade.camel44.CamelUpdate42Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s -- in org.apache.camel.upgrade.camel44.CamelUpdate42Test
+[INFO] Running org.apache.camel.upgrade.CamelUpdate417Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.553 s -- in org.apache.camel.upgrade.CamelUpdate417Test
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 108.1 s -- in org.apache.camel.upgrade.suites.CamelUpdateLatestTestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testArangoDbHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testArangoDbHeadersMigrationJava:131 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testElasticsearchHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testElasticsearchHeadersMigrationJava:295 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testGitHub2HeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testGitHub2HeadersMigrationJava:728 [The recipe should have made the following change to "test-github/pom.xml"] 
+expected: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github2</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+ but was: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testJt400HeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testJt400HeadersMigrationJava:172 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testLuceneHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testLuceneHeadersMigrationJava:45 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testMailHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testMailHeadersMigrationJava:213 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testMiloHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testMiloHeadersMigrationJava:256 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testOpensearchHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testOpensearchHeadersMigrationJava:340 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate418_3Test.testPdfHeadersMigrationJava
+[ERROR]   Run 1: CamelUpdate418_3Test.testPdfHeadersMigrationJava:86 Recipe was expected to make a change but made no changes.
+[INFO]   Run 2: PASS
+[INFO]   Run 3: PASS
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testArangoDbHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testArangoDbHeadersMigrationJava:268 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testElasticsearchHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testElasticsearchHeadersMigrationJava:288 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testGitHub2HeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testGitHub2HeadersMigrationJava:175 [The recipe should have made the following change to "test-github/pom.xml"] 
+expected: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github2</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+ but was: 
+  "<project>
+      <groupId>com.example</groupId>
+      <artifactId>test</artifactId>
+      <version>1.0.0</version>
+      <properties>
+          <maven.compiler.release>17</maven.compiler.release>
+      </properties>
+      <dependencies>
+          <dependency>
+              <groupId>org.apache.camel</groupId>
+              <artifactId>camel-github</artifactId>
+              <version>4.18.0</version>
+          </dependency>
+      </dependencies>
+  </project>"
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testJt400HeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testJt400HeadersMigrationJava:273 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testLuceneHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testLuceneHeadersMigrationJava:258 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testMailHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testMailHeadersMigrationJava:278 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testMiloHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testMiloHeadersMigrationJava:283 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testOpensearchHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testOpensearchHeadersMigrationJava:293 Recipe was expected to make a change but made no changes.
+[INFO] 
+[ERROR] org.apache.camel.upgrade.CamelUpdate421Test.testPdfHeadersMigrationJava
+[INFO]   Run 1: PASS
+[ERROR]   Run 2: CamelUpdate421Test.testPdfHeadersMigrationJava:263 Recipe was expected to make a change but made no changes.
+[INFO] 
+[INFO] 
+[ERROR] Tests run: 572, Failures: 18, Errors: 0, Skipped: 8
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:55 min
+[INFO] Finished at: 2026-06-09T14:26:55+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test (default-test) on project camel-upgrade-recipes: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

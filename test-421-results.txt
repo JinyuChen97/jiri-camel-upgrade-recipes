@@ -1,0 +1,187 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< org.apache.camel.upgrade:camel-upgrade-recipes >-----------
+[INFO] Building Camel Upgrades Recipes 4.21.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-maven-version) @ camel-upgrade-recipes ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-java-version) @ camel-upgrade-recipes ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ camel-upgrade-recipes ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.7
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ camel-upgrade-recipes ---
+[INFO] Copying 26 resources from src/main/resources to target/classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] The encoding used to copy filtered properties files have not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ camel-upgrade-recipes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ camel-upgrade-recipes ---
+[INFO] skip non existing resourceDirectory /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- dependency:3.1.1:copy (default) @ camel-upgrade-recipes ---
+[INFO] Configured Artifact: org.apache.camel:camel-activemq:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-api:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-bean:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-catalog:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-main:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-management-api:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-mock:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-support:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-util:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-milo:3.18.6:jar
+[INFO] Configured Artifact: org.apache.camel:camel-api:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-base:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-base-engine:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-endpointdsl:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-json-validator:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-kafka:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-main:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-management-api:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-mock:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-saga:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-support:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-tracing:4.0.3:jar
+[INFO] Configured Artifact: org.apache.camel:camel-spring-redis:4.4.2:jar
+[INFO] Configured Artifact: org.apache.camel:camel-opensearch:4.4.2:jar
+[INFO] Configured Artifact: org.apache.camel:camel-elasticsearch:4.4.2:jar
+[INFO] Configured Artifact: org.apache.camel:camel-elasticsearch:4.5.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain-chat:4.5.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain-embeddings:4.5.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-http-common:4.6.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-undertow:4.6.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-api:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-db2:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-mongodb:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-oracle:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-mysql:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-postgres:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-debezium-sqlserver:4.8.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-smb:4.9.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-azure-files:4.9.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-platform-http:4.10.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-http:4.12.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-fury:4.12.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-core-model:4.12.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain4j-chat:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-langchain4j-embeddings:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-milvus:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-neo4j:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-pinecone:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-qdrant:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-weaviate:4.14.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-qdrant:4.17.0:jar
+[INFO] Configured Artifact: org.apache.camel:camel-tahu:4.17.0:jar
+[INFO] Configured Artifact: org.eclipse.tahu:tahu-host:1.0.18:jar
+[INFO] Configured Artifact: org.apache.httpcomponents:httpclient:4.5.14:jar
+[INFO] Configured Artifact: org.apache.httpcomponents:httpcore:4.4.16:jar
+[INFO] Configured Artifact: jakarta.servlet:jakarta.servlet-api:6.0.0:jar
+[INFO] Configured Artifact: javax.xml.bind:jaxb-api:2.3.1:jar
+[INFO] Configured Artifact: jakarta.xml.bind:jakarta.xml.bind-api:4.0.2:jar
+[INFO] Configured Artifact: jakarta.inject:jakarta.inject-api:2.0.0:jar
+[INFO] Configured Artifact: jakarta.ws.rs:jakarta.ws.rs-api:3.1.0:jar
+[INFO] Configured Artifact: org.eclipse.milo:stack-core:0.6.8:jar
+[INFO] Configured Artifact: org.eclipse.milo:stack-server:0.6.8:jar
+[INFO] Configured Artifact: org.eclipse.milo:stack-client:0.6.8:jar
+[INFO] Configured Artifact: org.eclipse.milo:sdk-client:0.6.8:jar
+[INFO] org.apache.camel:camel-activemq:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-api:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-bean:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-catalog:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-main:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-management-api:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-mock:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-support:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-util:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-milo:3.18.6:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-api:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-base:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-base-engine:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-endpointdsl:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-json-validator:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-kafka:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-main:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-management-api:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-mock:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-saga:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-support:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-tracing:4.0.3:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-spring-redis:4.4.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-opensearch:4.4.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-elasticsearch:4.4.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-elasticsearch:4.5.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain-chat:4.5.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain-embeddings:4.5.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-http-common:4.6.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-undertow:4.6.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-api:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-db2:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-mongodb:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-oracle:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-mysql:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-postgres:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-debezium-sqlserver:4.8.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-smb:4.9.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-azure-files:4.9.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-platform-http:4.10.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-http:4.12.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-fury:4.12.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-core-model:4.12.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain4j-chat:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-langchain4j-embeddings:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-milvus:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-neo4j:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-pinecone:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-qdrant:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-weaviate:4.14.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-qdrant:4.17.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.camel:camel-tahu:4.17.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.tahu:tahu-host:1.0.18:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.httpcomponents:httpclient:4.5.14:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.apache.httpcomponents:httpcore:4.4.16:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.servlet:jakarta.servlet-api:6.0.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] javax.xml.bind:jaxb-api:2.3.1:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.xml.bind:jakarta.xml.bind-api:4.0.2:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.inject:jakarta.inject-api:2.0.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] jakarta.ws.rs:jakarta.ws.rs-api:3.1.0:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:stack-core:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:stack-server:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:stack-client:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] org.eclipse.milo:sdk-client:0.6.8:jar already exists in /Users/jinyuchen/IdeaProjects/jinyuProject/jiri-camel-upgrade-recipes/camel-upgrade-recipes/target/test-classes/META-INF/rewrite/classpath
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ camel-upgrade-recipes ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.3.0:test (default-test) @ camel-upgrade-recipes ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.camel.upgrade.CamelUpdate421Test
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.05 s -- in org.apache.camel.upgrade.CamelUpdate421Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.981 s
+[INFO] Finished at: 2026-06-09T14:24:57+01:00
+[INFO] ------------------------------------------------------------------------

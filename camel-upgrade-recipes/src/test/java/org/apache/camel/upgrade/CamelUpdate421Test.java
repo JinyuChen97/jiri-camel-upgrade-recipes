@@ -254,6 +254,62 @@ public class CamelUpdate421Test implements RewriteTest {
     }
 
     @Test
+    void testRemoveReifierStrategyImport() {
+        //language=java
+        rewriteRun(
+                java(
+                """
+                import org.apache.camel.builder.RouteBuilder;
+                import org.apache.camel.spi.ReifierStrategy;
+
+                class Test extends RouteBuilder {
+                    public void configure() {
+                        from("direct:start").to("log:test");
+                    }
+                }
+                """,
+                """
+                import org.apache.camel.builder.RouteBuilder;
+
+                class Test extends RouteBuilder {
+                    public void configure() {
+                        from("direct:start").to("log:test");
+                    }
+                }
+                """
+                )
+        );
+    }
+
+    @Test
+    void testRemoveZooWordEmbeddingPredictorImport() {
+        //language=java
+        rewriteRun(
+                java(
+                """
+                import org.apache.camel.builder.RouteBuilder;
+                import org.apache.camel.component.djl.model.nlp.ZooWordEmbeddingPredictor;
+
+                class Test extends RouteBuilder {
+                    public void configure() {
+                        from("direct:start").to("log:test");
+                    }
+                }
+                """,
+                """
+                import org.apache.camel.builder.RouteBuilder;
+
+                class Test extends RouteBuilder {
+                    public void configure() {
+                        from("direct:start").to("log:test");
+                    }
+                }
+                """
+                )
+        );
+    }
+
+    @Test
     void testLuceneHeadersMigrationJava() {
         new CamelUpdate418_3Test().testLuceneHeadersMigrationJava();
     }
