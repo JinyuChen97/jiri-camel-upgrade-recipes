@@ -727,7 +727,42 @@ public class CamelUpdate418_3Test implements RewriteTest {
         //language=java
         rewriteRun(
                 mavenProject("test-github",
-                        pomXml(CamelTestUtil.pomXmlWithDependency("camel-github", CamelTestUtil.CamelVersion.v4_18)),
+                        pomXml(
+                        """
+                        <project>
+                            <groupId>com.example</groupId>
+                            <artifactId>test</artifactId>
+                            <version>1.0.0</version>
+                            <properties>
+                                <maven.compiler.release>17</maven.compiler.release>
+                            </properties>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>org.apache.camel</groupId>
+                                    <artifactId>camel-github</artifactId>
+                                    <version>4.18.0</version>
+                                </dependency>
+                            </dependencies>
+                        </project>
+                        """,
+                        """
+                        <project>
+                            <groupId>com.example</groupId>
+                            <artifactId>test</artifactId>
+                            <version>1.0.0</version>
+                            <properties>
+                                <maven.compiler.release>17</maven.compiler.release>
+                            </properties>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>org.apache.camel</groupId>
+                                    <artifactId>camel-github2</artifactId>
+                                    <version>4.18.0</version>
+                                </dependency>
+                            </dependencies>
+                        </project>
+                        """
+                        ),
                         java(
                         """
                         import org.apache.camel.Exchange;
