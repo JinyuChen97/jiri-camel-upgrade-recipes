@@ -52,6 +52,11 @@ recipeList:
   - org.apache.camel.upgrade.camel421.upgradeIrcHeaders
   - org.apache.camel.upgrade.camel421.RemoveReifierStrategyImport
   - org.apache.camel.upgrade.camel421.RemoveZooWordEmbeddingPredictorImport
+  - org.apache.camel.upgrade.camel421.removeCamelStompDependency
+  - org.apache.camel.upgrade.camel421.removeCamelAwsXrayDependency
+  - org.apache.camel.upgrade.camel421.removeCamelGuavaEventbusDependency
+  - org.apache.camel.upgrade.camel421.removeCamelGrapeDependency
+  - org.apache.camel.upgrade.camel421.removeCamelElytronDependency
 ---
 ## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-kafka---potential-breaking-change
 type: specs.openrewrite.org/v1beta/recipe
@@ -470,3 +475,53 @@ recipeList:
         useScroll: CamelOpensearchUseScroll
         size: CamelOpensearchSize
         from: CamelOpensearchFrom
+---
+## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-stomp-removal
+type: specs.openrewrite.org/v1beta/recipe
+name: org.apache.camel.upgrade.camel421.removeCamelStompDependency
+displayName: Remove camel-stomp dependency
+description: Removes the camel-stomp dependency which was removed in Camel 4.21 (deprecated since 4.17).
+recipeList:
+  - org.openrewrite.maven.RemoveDependency:
+      groupId: org.apache.camel
+      artifactId: camel-stomp
+---
+## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-aws-xray-removal
+type: specs.openrewrite.org/v1beta/recipe
+name: org.apache.camel.upgrade.camel421.removeCamelAwsXrayDependency
+displayName: Remove camel-aws-xray dependency
+description: Removes the camel-aws-xray dependency which was removed in Camel 4.21 (deprecated since 4.17, AWS X-Ray service in maintenance mode).
+recipeList:
+  - org.openrewrite.maven.RemoveDependency:
+      groupId: org.apache.camel
+      artifactId: camel-aws-xray
+---
+## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-guava-eventbus-removal
+type: specs.openrewrite.org/v1beta/recipe
+name: org.apache.camel.upgrade.camel421.removeCamelGuavaEventbusDependency
+displayName: Remove camel-guava-eventbus dependency
+description: Removes the camel-guava-eventbus dependency which was removed in Camel 4.21 (deprecated since 4.6).
+recipeList:
+  - org.openrewrite.maven.RemoveDependency:
+      groupId: org.apache.camel
+      artifactId: camel-guava-eventbus
+---
+## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-grape-removal
+type: specs.openrewrite.org/v1beta/recipe
+name: org.apache.camel.upgrade.camel421.removeCamelGrapeDependency
+displayName: Remove camel-grape dependency
+description: Removes the camel-grape dependency which was removed in Camel 4.21 (deprecated since 4.1).
+recipeList:
+  - org.openrewrite.maven.RemoveDependency:
+      groupId: org.apache.camel
+      artifactId: camel-grape
+---
+## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-elytron-removal
+type: specs.openrewrite.org/v1beta/recipe
+name: org.apache.camel.upgrade.camel421.removeCamelElytronDependency
+displayName: Remove camel-elytron dependency
+description: Removes the camel-elytron dependency which was removed in Camel 4.21 (deprecated since 4.0).
+recipeList:
+  - org.openrewrite.maven.RemoveDependency:
+      groupId: org.apache.camel
+      artifactId: camel-elytron
