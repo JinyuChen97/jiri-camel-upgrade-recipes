@@ -53,6 +53,8 @@ recipeList:
   - org.apache.camel.upgrade.camel421.upgradeCouchdbHeaders
   - org.apache.camel.upgrade.camel421.upgradeCouchbaseHeaders
   - org.apache.camel.upgrade.camel421.upgradeIrcHeaders
+  - org.apache.camel.upgrade.camel421.RemoveReifierStrategyImport
+  - org.apache.camel.upgrade.camel421.RemoveZooWordEmbeddingPredictorImport
 ---
 ## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-couchdb
 type: specs.openrewrite.org/v1beta/recipe
