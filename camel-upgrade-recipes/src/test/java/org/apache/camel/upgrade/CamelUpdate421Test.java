@@ -665,4 +665,44 @@ public class CamelUpdate421Test implements RewriteTest {
         ));
     }
 
+    @Test
+    void testLuceneHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testLuceneHeadersMigrationJava();
+    }
+
+    @Test
+    void testPdfHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testPdfHeadersMigrationJava();
+    }
+
+    @Test
+    void testArangoDbHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testArangoDbHeadersMigrationJava();
+    }
+
+    @Test
+    void testJt400HeadersMigrationJava() {
+        new CamelUpdate418_3Test().testJt400HeadersMigrationJava();
+    }
+
+    @Test
+    void testMailHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testMailHeadersMigrationJava();
+    }
+
+    @Test
+    void testMiloHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testMiloHeadersMigrationJava();
+    }
+
+    @Test
+    void testElasticsearchHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testElasticsearchHeadersMigrationJava();
+    }
+
+    @Test
+    void testOpensearchHeadersMigrationJava() {
+        new CamelUpdate418_3Test().testOpensearchHeadersMigrationJava();
+    }
+
 }
