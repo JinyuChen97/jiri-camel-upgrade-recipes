@@ -144,12 +144,6 @@ recipeList:
         ParentIssueKey: CamelJiraParentIssueKey
         ChildIssueKey: CamelJiraChildIssueKey
 ---
-## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-couchdb
-type: specs.openrewrite.org/v1beta/recipe
----
-## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-couchbase
-type: specs.openrewrite.org/v1beta/recipe
----
 ## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_21.adoc#camel-jgroups-raft
 type: specs.openrewrite.org/v1beta/recipe
 name: org.apache.camel.upgrade.camel418_3.upgradeJGroupsRaftHeaders
@@ -280,7 +274,6 @@ recipeList:
         gridfs.chunksize: CamelGridFsChunkSize
         gridfs.objectid: CamelGridFsObjectId
         gridfs.fileid: CamelGridFsFileId
----
 ---
 ## https://github.com/apache/camel/blob/main/docs/user-manual/modules/ROOT/pages/camel-4x-upgrade-guide-4_18.adoc#camel-lucene
 type: specs.openrewrite.org/v1beta/recipe
